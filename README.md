@@ -1,6 +1,13 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23652789)
-# cpsc39-finalProjects
+# Wasteland Survival Manager
 
-Upload your final project to this github repo.
+CPSC-39 Final Project
+Matt Ceran
 
-Make a README file for your project and put the infor about your project in it - your name, date and what your program does.
+text-based survival manager set in a post-apocalyptic wasteland. user is the overseer of a small settlement and manages survivors.
+
+## progress so far
+
+- Survivor class with name, health, level, role
+- Settlement class that holds the list of survivors with add/remove and average health
+
+still need to add: inventory, sorting, searching, file save/load, full menu
