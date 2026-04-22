@@ -1,0 +1,10 @@
+# compiled java bytecode, regenerated on every build
+*.class
+
+# save file generated when running the program
+wasteland_save.txt
+
+# editor and OS junk
+.idea/
+.vscode/
+.DS_Store
