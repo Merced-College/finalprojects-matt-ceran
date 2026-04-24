@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 // settlement holds the survivors and has methods for managing them
 public class Settlement {
@@ -45,6 +46,20 @@ public class Settlement {
         }
 
         return (double) total / survivors.size();
+    }
+
+    // count how many survivors are in each role using a hashmap
+    public HashMap<String, Integer> getRoleCounts() {
+        HashMap<String, Integer> counts = new HashMap<>();
+        for (Survivor s : survivors) {
+            String r = s.getRole();
+            if (counts.containsKey(r)) {
+                counts.put(r, counts.get(r) + 1);
+            } else {
+                counts.put(r, 1);
+            }
+        }
+        return counts;
     }
 
     // quick test to make sure stuff works
